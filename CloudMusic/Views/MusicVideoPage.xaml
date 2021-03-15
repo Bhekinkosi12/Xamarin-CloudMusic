@@ -30,9 +30,9 @@
                 <customforms:CustomListview.Header>
                     <StackLayout>
                         <StackLayout>
-                            <StackLayout Padding="20" Spacing="15">
+                            <StackLayout Padding="20" Spacing="10">
                                 <Label Text="{Binding MvInfo.data.name}"  FontSize="20" FontAttributes="Bold" TextColor="#333333"></Label>
-                                <Label Text="{Binding MvInfo.data.PlayCountstr,StringFormat='\{0}次观看'}" FontSize="12"></Label>
+                                <Label Text="{Binding MvInfo.data.PlayCountstr,StringFormat='\{0}次观看'}" FontSize="15"></Label>
                                 <Label Text="{Binding MvInfo.data.publishTime,StringFormat='\{0} 发布'}" ></Label>
                             </StackLayout>
                             <Grid ColumnSpacing="0">
@@ -115,7 +115,7 @@
             <StackLayout Orientation="Horizontal" Padding="20,10" x:Name="sublayout2" Grid.Row="1" BackgroundColor="White" IsVisible="False">
                 <customforms:CircleImage Source="{Binding Artists[0].artist.img1v1Url}" WidthRequest="20" HeightRequest="20" VerticalOptions="Center"></customforms:CircleImage>
                 <Label Text="{Binding  MvInfo.data.artistName}" TextColor="#333333" FontSize="12" VerticalOptions="Center" HorizontalOptions="FillAndExpand"></Label>
-                <Button CornerRadius="15" Text="+ 收 藏" BackgroundColor="Red" TextColor="White"  WidthRequest="50" HeightRequest="18" FontSize="10" Padding="0"></Button>
+                <Button CornerRadius="10" Text="+ 收 藏" BackgroundColor="Red" TextColor="White"  WidthRequest="50" HeightRequest="18" FontSize="10" Padding="0"></Button>
             </StackLayout>
             <local:VideoPlayer x:Name="videoView" HorizontalOptions="FillAndExpand"  VerticalOptions="Start" AreTransportControlsEnabled="True" AutoPlay="True" BackgroundColor="Black" HeightRequest="200" Source="{Binding UriSource}" Grid.Row="0">
             </local:VideoPlayer>
